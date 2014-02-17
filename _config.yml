@@ -2,11 +2,11 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
-simple_search: http://google.com/search
+url: http://disrupts.github.io
+title: Disruptively sincere
+subtitle: Unleashed thoughts.
+author: disrupts
+simple_search: https://duckduckgo.com/?q=site%3Adisrupts.github.io+
 description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
@@ -63,8 +63,8 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # ----------------------- #
 
 # Github repositories
-github_user:
-github_repo_count: 0
+github_user: disrupts
+github_repo_count: 2
 github_show_profile_link: true
 github_skip_forks: true
 
