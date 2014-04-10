@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Hardware | Disruptively sincere]]></title>
+  <link href="http://disrupts.github.io/category/hardware/atom.xml" rel="self"/>
+  <link href="http://disrupts.github.io/"/>
+  <updated>2014-04-11T00:03:44+02:00</updated>
+  <id>http://disrupts.github.io/</id>
+  <author>
+    <name><![CDATA[disrupts]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Thoughts on WWDC MMXIII]]></title>
+    <link href="http://disrupts.github.io/thoughts-on-wwdc-mmxiii/"/>
+    <updated>2013-06-12T12:00:00+02:00</updated>
+    <id>http://disrupts.github.io/thoughts-on-wwdc-mmxiii</id>
+    <content type="html"><![CDATA[<p><em>Ok, some time has passed, I watched the WWDC stream live, and have a mixed opinion about it. Overall I without doubt say I expected more from Apple, something more groundbreaking or risky.</em></p>
+
+<p><strong>I shall start with the bad, otherwise it would be too much to end with.</strong></p>
+
+<p>Mac OS X 10.9 Mavericks brings:</p>
+
+<ul>
+<li>tabs in Finder, pretty easy to foresee, but at least they could have done it right (many apps do it on 10.6 to 10.8 such as <a href="http://www.trankynam.com/xtrafinder/">XtraFinder</a> which include several more features including the very useful split pane)</li>
+<li>a multiple display upgrade, well that isn’t a new feature, but rather a bug in Mountain Lion when using full screen apps that needed to be removed&hellip;</li>
+<li>tagging is new but not a new concept and already available with third party apps such as for tabs</li>
+</ul>
+
+
+<p>and feels like bug tracking more than a real upgrade (and this I’m confident is because they are preparing something bigger for next release).</p>
+
+<p>New Macbook air brings many hardware improvements but no innovation, no tactile screen as there is no new hybrid OS. Apple will be one more year behind Windows 8 and it is going to hurt them if they don’t come up with something really big next because many people will go to Microsoft to get a sense of novelty (many “dockable” Intel-Atom based Windows tablets (or with detachable keyboards) are already getting people’s attention, and those can legitimately replace netbooks as they run the full OS (not the ARM version)).
+One great thing of the new Apple Laptops are the 802.11 ac wireless chipsets! That is modern stuff, but that actually didn’t surprise me. It was rather the lack of it in both the Xbox One and Playstation 4 where both are stuck with n. [between you and me, it is ad I can&rsquo;t wait to see!]</p>
+
+<p><img class="center" src="/assets/images/2013-06-12-thoughts-on-wwdc-mmxiii/007.jpg" width="800" title="iOS 7" ></p>
+
+<p><strong>The good things!</strong></p>
+
+<p>A new Mac Pro (well it was a must, it had been too long since the last update, but at least they are totally fresh models). The shape is weird but according to them it is for cooling purposes (by now, we all know how obsessed they are with fan noise). I didn’t get well the hard disk specs but it seemed like they were going fully flash. It is nice for a production machine but to store the end products spinning hard drives are a must. That will probably be configurable before buying though. The best of them is the 4k support! They really have in mind video and photo editing (all their displays already come nicely calibrated, all of them, from the iPhone to their biggest monitor).</p>
+
+<p>The new Siri voice is just astonishing. Siri has new features, but nothing extraordinary. It just does what everyone expected it to do: it is able to change settings. But those new voices, they are just gorgeous.</p>
+
+<p>The car stuff seems nice. I didn’t get how it is going to work (software-wise) but it will bring better voice control (I imagine it will use mikes already placed inside the car by manufacturers for hands-free systems). I just want to see how deep the integration is and how well they can use the cars’ built in displays.</p>
+
+<p><strong>and now it’s time for the weird things Apple showed us:</strong></p>
+
+<p>iOS 7, I couldn’t call it good or bad. It is a visual redesign and a catch up on specs (as compared to Android 4.2). The Control center, Safari features, multitasking (except for the 4 finger gestures the iPad already has) and the animated backgrounds are nothing new for those on the other side of the fence. As I already mentioned, it seems like a distilled upgrade waiting for something big coming up (the visual change was a necessity, 6 versions alike isn’t good and will help people move to the next one). In mobile Ubuntu touch will soon be a reference to where we are going (for light users at least, phones won’t catch up full fledged desktop anytime soon).</p>
+
+<p>iWork for iCloud, that was a big ‘WTF’ for me. It just remembered me of the web-based LibreOffice, with GoogleDocs as the one to overthrow (it shouldn’t be difficult if Apple is able to bring all iWork features to usable web interface). As for Microsoft… well any of their devices can run a copy of Office, they don’t feel the urge of doing anything web-based that could have a poor user-experience. At least they surprised me with this!</p>
+
+<p>It felt strange that Apple displayed the number of webkit browsers in use, or even silly… as their’s isn’t the most used one. They are also not the only ones to develop it, nor they built it all from scratch (they forked the KDE browser).</p>
+
+<p>I loved the new Apple tv feature, using it as a display instead of mirroring is something I was looking into for some time. It just makes sense to use any set-top box that is not used at that moment as a replacement for wireless HDMI through any WiFI network (but only if the router is in good shape…). I hope Wayland will be able to bring some similar feature to the OpenSource world because the X mess may not be a suited platform to built it.</p>
+
+<p><em>Those were my thoughts, feel free to comment and start a conversation! I’ll be glad too keep talking about the the upcoming tech.</em></p>
+
+<p><em>Image by ©2013 Apple Inc.</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Future Is Today! New Tech Released?]]></title>
+    <link href="http://disrupts.github.io/the-future-is-today-new-tech-released/"/>
+    <updated>2013-06-10T12:00:00+02:00</updated>
+    <id>http://disrupts.github.io/the-future-is-today-new-tech-released</id>
+    <content type="html"><![CDATA[<p>We are about to confirm a trend in technology.</p>
+
+<p>Not only a trend, a new way of interacting with computer.</p>
+
+<p>Tomorrow start E3 and today is Apple’s WWDC.</p>
+
+<p>And I expect to see 2 important things:</p>
+
+<ul>
+<li> more possibilities in tactile and voice interaction with computers (consoles in E3)</li>
+<li> the way Apple tries face the fact that hybrid OS are the future</li>
+</ul>
+
+
+<p><img class="center" src="/assets/images/2013-06-10-the-future-is-today-new-tech-released/006.jpg" width="500" title="WWDC 2013" ></p>
+
+<p>The first one I believe is more to see in long term, with Google Glass which change the concept of computers. That computer is no longer for content creation (like any modern desktop or laptop) nor for content consumption (tablets and smartphones). It is designed to receive and display notifications.
+That is it’s first goal, but not the only one. Those computerised googles are a new vector for augmented reality.</p>
+
+<p>The second is yet to be seen. Microsoft and Canonical have bet on hybrid software. A software that runs on different architectures and of very different machines (from smartphones to desktops, with tablets and ultra-books  as their target) with the same user experience and even share apps with the older desktop only (i386, amd64, ppc or other) OS.
+Apple has yet to show something similar, and it will, but maybe not tomorrow. Many new tablets have arrived from different manufacturers with Windows 8, even some with Intel Atom processors and removable keyboards (giving them the potential to be used as tablets and netbooks). Apple still has two distinct pieces of software (IOS and Mac OS X) that run on totally different hardware (ARM and amd64). The problem it faces is that it is a hardware manufacturers and no other hardware is allowed to be released with their software (with the exception of a laptop for designers that had a Wacom tactile screen and ran Snow Leopard).</p>
+
+<p>Will we see a change in computer architecture for Apple hardware tomorrow (for computers and tablets alike)? or will they move their IPad to Intel hardware? They could also choose to wait 6 more months to release a very polished user experience.</p>
+
+<p>We will see at 10:00 AM Pacific!</p>
+
+<p>PS: The conference is over, now it is time let you know <a href="/blog/thoughts-on-wwdc-mmxiii/">what I think about it</a></p>
+
+<p><em>Image by ©2013 Apple Inc.</em></p>
+]]></content>
+  </entry>
+  
+</feed>
