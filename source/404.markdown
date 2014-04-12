@@ -1,0 +1,16 @@
+---
+layout: page
+title: "That page does not exist"
+comments: false
+sharing: false
+footer: true
+---
+
+{% img center assets/images/404/suzumiya_haruhi_finally_broke_by_advancedq-d42f11e.png 800 %}
+
+Ups, this shouldn't have happened!
+
+Beware of annoying the [Queen](https://en.wikipedia.org/wiki/Haruhi_Suzumiya_%28character%29).
+
+
+*Image by [advanceq](http://advancedq.deviantart.com/) under a [CC-BY-SA](http://creativecommons.org/licenses/by-sa/3.0/) license*
