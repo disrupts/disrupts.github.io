@@ -5,7 +5,7 @@ date: 2014-04-08 14:25:29 +0200
 comments: true
 categories: 
 - anime
-- Alicante
+- places
 ---
 
 This weekend was the 4º *[Salón del Manga de Alicante](http://www.smalicante.com/)*, an manga/anime/games-centric *con* at my hometown.
@@ -88,7 +88,7 @@ Wrapping up, don't be ashamed of your fandoms' there's a reason you like them! (
 
 
 *All photos are release under a [Creative Commons BY-NC-SA license](http://creativecommons.org/licenses/by-nc-sa/4.0/).*
-*If you want a higher resolution version please contact me via [email](email@willbehere.soon) (PGP keys on their way).*
+*If you want a higher resolution version please contact me via [email](mailto:disrupts@outlook.com) (PGP keys on their way).*
 *Props to all those awesome cosplayers, they are the real artists!*
 *And if you recognise yourself in the photos, tell me what you think! I'd love to hang out some time!*
 *I also want to thank [blackjan86](https://www.youtube.com/user/blackjan86), a good friend of mine for recording and uploading a few videos of the concert!*

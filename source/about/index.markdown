@@ -15,6 +15,6 @@ I’m not expecting any one to read all of this <del>(or should i say, this crap
 
 I somehow owe you for reading the deep thoughts of my mind i ended up publishing without thinking about it; thoughts which i don’t expect to be very helpful to humanity but which are, if anything else, at least truly **sincere**.
 
-Contact me at (it'll be up soon).
+Contact me via [email](mailto:disrupts@outlook.com).
 
 

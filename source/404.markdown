@@ -6,7 +6,7 @@ sharing: false
 footer: true
 ---
 
-{% img center assets/images/404/suzumiya_haruhi_finally_broke_by_advancedq-d42f11e.png 800 %}
+{% img center /assets/images/404/suzumiya_haruhi_finally_broke_by_advancedq-d42f11e.png 800 %}
 
 Ups, this shouldn't have happened!
 

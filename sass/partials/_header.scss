@@ -1,5 +1,8 @@
 body > header {
   background: $header-bg;
+  /* my change */
+  background: url('/images/noise.jpg');
+  /* end of my change */
   h1 {
     display: inline-block;
     margin: 0;

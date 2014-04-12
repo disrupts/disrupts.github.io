@@ -41,3 +41,44 @@
 //$pre-bg: $base03;
 //$pre-border: darken($base02, 5);
 //$pre-color: $base1;
+
+
+
+/* Changes From Original */
+/* --------------------- */
+
+
+
+$my-new-colour: desaturate(lighten(#ccc,17),50);
+$my-light-colour: #0196ff;
+
+$nav-bg: $my-new-colour;
+$nav-bg-front: image-url('noise.png');
+$nav-bg-back: $nav-bg;
+$nav-border-top: darken($nav-bg, 10);
+$nav-border-bottom: darken($nav-bg, 10);
+$nav-color: $my-light-colour;
+$nav-color-hover: adjust-color(lighten($my-light-colour,10), $lightness: 10, $saturation: 25) !default;
+
+$footer-bg: $my-new-colour;
+$footer-bg-front: image-url('noise.png');
+$footer-bg-back: linear-gradient(lighten($footer-bg, 0), $footer-bg, darken($footer-bg, 0));
+
+$sidebar-bg: $my-new-colour;
+
+$header-bg: $my-new-colour;
+$title-color: #222;
+
+$page-bg: $my-new-colour;
+//$page-bg-front: image-url('noise.png');
+
+$main-bg: $my-new-colour;
+
+
+$text-color-light: $my-light-colour;
+
+/* links */
+$link-color: $my-light-colour;
+$link-color-hover: adjust-color(lighten($my-light-colour,10), $lightness: 10, $saturation: 25) !default;
+$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4);
+$link-color-active: adjust-color($link-color-hover, $lightness: -15);
