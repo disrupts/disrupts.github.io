@@ -7,7 +7,7 @@ sharing: true
 footer: true
 ---
 
-*UPDATE 2014: I've just migrated from Wordpress and decided not to add an external comment system to avoid trackers! I'm still deciding if the site should open source anonymitysing analytics. I also want to thank [Heinrich Faust](http://hfaust.me/) and [Ruben Schade](http://rubenerd.com/) for their blogs that give me the extra motivation I needed to keep writing regularly.*
+*UPDATE 2014: I've just migrated from Wordpress and decided not to add an external comment system to avoid trackers! I'm still deciding if the site should run open source anonysing analytics. I also want to thank [Heinrich Faust](http://hfaust.me/) and [Ruben Schade](http://rubenerd.com/) for their blogs that give me the extra motivation I need to keep writing.*
 
 I’m not expecting any one to read all of this <del>(or should i say, this crap)</del> but i can but be thankful if anyone does.
 
