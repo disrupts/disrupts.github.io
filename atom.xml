@@ -4,7 +4,7 @@
   <title><![CDATA[Disruptively sincere]]></title>
   <link href="http://disrupts.github.io/atom.xml" rel="self"/>
   <link href="http://disrupts.github.io/"/>
-  <updated>2014-05-05T13:33:18+02:00</updated>
+  <updated>2014-05-05T21:49:13+02:00</updated>
   <id>http://disrupts.github.io/</id>
   <author>
     <name><![CDATA[disrupts]]></name>
@@ -23,14 +23,15 @@ And about (old-school) <em>Pokemon</em>!, straight from the nineties.</p>
 
 <p><img class="center" src="http://disrupts.github.io/assets/images/2014-05-05-a-pokemon-easter-egg-in-android-4-dot-4/android_easter-egg.jpg" width="800"></p>
 
-<p>Now that you know, why not twisting the subject a bit!</p>
+<p>The screen-shot is from a Galaxy Nexus running a nightly build of CM-11. I don&rsquo;t know if the Easter-egg comes from Google or the CyanogenMod team.
+Now that you know, why not twisting the subject a bit!</p>
 
 <p>You might have recognised the <em>Privacy Guard</em> icon! Yes, the one from <a href="http://www.cyanogenmod.org/">CyanogenMod</a>.
 I&rsquo;ve been running the nightly builds on my phone for a year and a half and it really works for me.</p>
 
 <p>This ROM suits my way of <a href="http://disrupts.github.io/go-modal">understanding technology</a>. It is a stripped down version of android (stock android) with granular control and many extra configurations, neat and clean!</p>
 
-<p>Aside from a few <em>hiccups</em> (such as the proximity sensor turning off the screen but not disabling the touch-screen in 4.2 (CM10.1) for some weeks) it is a great experience and always gratifying when after an update you see the new features pop out!</p>
+<p>Aside from a few <em>hiccups</em> (such as the proximity sensor turning off the screen but not disabling the touch-screen in 4.2 (CM-10.1) for some weeks) it is a great experience and always gratifying when after an update you see the new features pop out!</p>
 
 <p>It is always nice to find an Easter egg in software, reminds me of the time when every single video-game add some hidden (or not so hidden) cheats and we used to get them in magazines! Back in the PlayStation (yes, I&rsquo;m talking about the first one that some will remember as PSX) and early PS2 days.</p>
 ]]></content>
