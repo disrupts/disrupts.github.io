@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Anime | Disruptively sincere]]></title>
   <link href="http://disrupts.github.io/category/anime/atom.xml" rel="self"/>
   <link href="http://disrupts.github.io/"/>
-  <updated>2014-04-23T13:26:17+02:00</updated>
+  <updated>2014-05-05T12:59:43+02:00</updated>
   <id>http://disrupts.github.io/</id>
   <author>
     <name><![CDATA[disrupts]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A Pokemon Easter Egg in Android 4.4 Calculator App]]></title>
+    <link href="http://disrupts.github.io/a-pokemon-easter-egg-in-android-4-dot-4/"/>
+    <updated>2014-05-05T00:00:00+02:00</updated>
+    <id>http://disrupts.github.io/a-pokemon-easter-egg-in-android-4-dot-4</id>
+    <content type="html"><![CDATA[<p>Your read right, there is an Easter egg in Android!</p>
+
+<p>An about (old-school) <em>Pokemon</em>!, straight from the nineties.</p>
+
+<p><img class="center" src="/assets/images/2014-05-05-a-pokemon-easter-egg-in-android-4-dot-4/android_easter-egg.jpg" width="600"></p>
+
+<p>Now that you know, why not twisting the subject a bit!</p>
+
+<p>You might have recognised the <em>Privacy Guard</em> icon! Yes, the one from <a href="http://www.cyanogenmod.org/">CyanogenMod</a>.
+I&rsquo;ve been running the nightly builds on my phone for a year and a half and it really works for me.</p>
+
+<p>This <em>ROM</em> suits my way of <a href="/go-modal">understanding technology</a>. It is a stripped down version of android (stock android) with granular control and many extra configurations, neat and clean!</p>
+
+<p>Aside from a few <em>hiccups</em> (such as the proximity sensor turning off the screen but not disabling the touch-screen in 4.2 (CM10.1) for some weeks) it is a great experience and always gratifying when after an update you see the new features pop out!</p>
+
+<p>It is always nice to find an Easter egg in software, reminds me of the time when every single video-game add some hidden (or not so hidden) cheats and we used to get them in magazines! Back in the PlayStation (yes, I&rsquo;m talking about the first one that some will remember as PSX) and early PS2 days.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[More Wallpapers]]></title>
