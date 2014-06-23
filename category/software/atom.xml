@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Software | Disruptively sincere]]></title>
   <link href="http://disrupts.github.io/category/software/atom.xml" rel="self"/>
   <link href="http://disrupts.github.io/"/>
-  <updated>2014-05-05T21:49:13+02:00</updated>
+  <updated>2014-06-23T17:25:04+02:00</updated>
   <id>http://disrupts.github.io/</id>
   <author>
     <name><![CDATA[disrupts]]></name>
@@ -18,7 +18,9 @@
     <link href="http://disrupts.github.io/a-pokemon-easter-egg-in-android-4-dot-4/"/>
     <updated>2014-05-05T00:00:00+02:00</updated>
     <id>http://disrupts.github.io/a-pokemon-easter-egg-in-android-4-dot-4</id>
-    <content type="html"><![CDATA[<p>Your read right, there is an Easter egg in Android!
+    <content type="html"><![CDATA[<p><em>UPDATE June 2014: The easter egg is from CyanogenMod! Thanks guys, you&rsquo;re doing a great job, and with humour!</em></p>
+
+<p>Your read right, there is an Easter egg in Android!
 And about (old-school) <em>Pokemon</em>!, straight from the nineties.</p>
 
 <p><img class="center" src="/assets/images/2014-05-05-a-pokemon-easter-egg-in-android-4-dot-4/android_easter-egg.jpg" width="800"></p>
