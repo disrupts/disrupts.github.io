@@ -1,0 +1,68 @@
+---
+layout: post
+title: "Gone Home, an experience rather than a game"
+date: 2014-04-22 00:00:00 +0200
+published: true
+comments: true
+categories:
+- software
+- metacommunication
+- thoughts
+keywords: Gone, Home, experience, game, art
+description: A Gone Home humble commentary
+---
+
+*Art is about telling a story*
+
+Any form of art I can thing of right now somehow wishes to tell a story, let it be music, paintings or even photography (this one deserves a whole post).
+Even Richard Serra sculptures (I love them by the way) tell stories, and deep ones with yourself as the protagonist.
+
+Why this intro? because video-games are also storytelling devices. 
+They can also be Art.
+
+I recently played through [*Gone Home*][gone_home] and loved it, I enjoyed every part of it.
+From the heartwarming love story, the storm sounds, the music to the horror-game-like environment.
+It was so good I was almost in tears by the end of it (especially during the-last-gig journal entry). 
+
+Yet this is not what I want to talk about today.
+
+{% img center /assets/images/2014-04-22-gone-home/gone_home_kiss.jpg 700 A lovely fan art by fortheloveofpizza %}
+
+The best part of it is that story can't be told effectively in any other form of media.
+It could be a lovely short story or novel, or even a film but it would lose most of it's strength.
+
+The real magic of the game is just that. Being a game, letting you be the protagonist. You have the last word about what you should see, read, learn and experience during the game. It doesn't force you through a linear path feeding you the plot - nor the background information about the characters.
+
+It is your decision if you want to go through the house and dig up the secondary stories. 
+No one forces you to learn how the relationship between Janice and Terrance is, or Terrance current job issues (and alcohol ones), not even Oscar's deep dark storyline.
+
+[Oscar's past][transgression] (beware of the **spoiler** if you follow this link) is the one that really shines. It is the easiest to miss.
+It makes a lot of sense.
+
+Sam's last year is the main plot and thus the only one "forced" on you (this is not what I meant, you're playing it for that story, I hope you get my point).
+Your parents story is more difficult to grasp, yet easy to find. Both live in that house. We can clearly see who fills each room or space of the house and Sam gets the most of it.
+Oscar is no longer living but he still is the "owner" of the basement and the secret passages. His story is also the further away in time.
+This concept shines with him: his darker secrets are implicit within the little evidence that remains...
+
+What do you think about it? Have you played it?
+
+Do you share this point of view about video games? Do you think they can offer alternative ways of communication and storytelling?
+
+By the way, did you also fall for Sam? She is just so cute, and with a very deep voice acting!
+
+There is little more I have to say about it (and so much has already been said), so I’ll give you a few links as a follow up:
+ 
+ * [Adam Sessler’s review][adam_games_of_year], this is how I discovered the game (either that or on some [Anthony Carboni][carboni] video; the part on *Gone Home* is right at the end
+ * [Luke Maciak’s review][term_incoherent] (I just like his blog.)
+ * another Adam Sessler video, [an interview to one of the authors][interview]
+
+ *The Awesome fan art is by [fortheloveofpizza][fanartist], you can find it [here][fanart]*
+
+ [gone_home]:          http://www.gonehomegame.com/
+ [transgression]:       http://clockworkworlds.com/post/58411117679/the-transgression-you-can-do-better
+ [adam_games_of_year]: https://revision3.com/rev3gamesreviews/adams-2013-goty
+ [carboni]:            https://twitter.com/acarboni
+ [term_incoherent]:    http://www.terminally-incoherent.com/blog/2014/02/24/gone-home/
+ [interview]:          http://revision3.com/rev3gamespreviews/gone-home-interview
+ [fanartist]:          http://fortheloveofpizza.deviantart.com/
+ [fanart]:             http://fortheloveofpizza.deviantart.com/art/Gone-Home-Kiss-417796613
