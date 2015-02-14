@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Software | Disruptively sincere]]></title>
   <link href="http://disrupts.github.io/category/software/atom.xml" rel="self"/>
   <link href="http://disrupts.github.io/"/>
-  <updated>2015-02-14T12:52:23+01:00</updated>
+  <updated>2015-02-14T12:54:37+01:00</updated>
   <id>http://disrupts.github.io/</id>
   <author>
     <name><![CDATA[disrupts]]></name>
@@ -12,6 +12,118 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[OpenBSD's Great Base System to Test &amp; Play With MIDI Interfaces]]></title>
+    <link href="http://disrupts.github.io/openbsd-great-base-system-to-test-and-play-midi/"/>
+    <updated>2015-02-14T12:00:00+01:00</updated>
+    <id>http://disrupts.github.io/openbsd-great-base-system-to-test-and-play-midi</id>
+    <content type="html"><![CDATA[<p>A little background story: I wanted to play some music with my MIDI keyboard
+and had a Pentium 4 desktop laying around with no display.</p>
+
+<p><img class="right" src="/assets/images/2015-02-14-openbsd-great-base-system-to-test-and-play-midi/Rock.jpg" width="200"></p>
+
+<p>I had already installed OpenBSD on it to give it a try (and update the Ubuntu
+10.10 install I hadn’t touched in years). During the install I decided to keep
+the default OpenSSH running and configure the WiFi network. That&rsquo;s it, I had a
+server to connect to! And I found out there was a console-based MIDI sequencer
+for OpenBSD: <a href="http://www.midish.org">midish</a>!</p>
+
+<p>The end result is simple, everything works!</p>
+
+<p>Now I’ll give you the details of this fast setup.</p>
+
+<p>The first thing is to check if the OS is registering the MIDI input properly.
+The <a href="http://www.openbsd.org/faq/faq13.html#midi">OpenBSD FAQ</a> has good info about it. Just connect it, check
+<code>dmesg</code> for a new midi interface and cat the input to the screen!
+Here’s the one liner from the FAQ:</p>
+
+<pre><code>aucat -Mq rmidi/1 -o - | hexdump -e '1/1 "%02x\n"'
+</code></pre>
+
+<p>I kind of messed up everything from here because my USB keyboard (Roland)
+wasn’t outputting <a href="http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man4/umidi.4">standard MIDI</a>. Just have a look at the user manual
+of your instruments and check if they do, or if there is a way to fallback to
+standard (as I found out later).</p>
+
+<p>Now it’s time to start the sequencer and choose a sound module! If you have a
+hardware one, good for you. I picked the first I found on the ports tree:
+<a href="http://openports.se/audio/fluidsynth">fluidsynth</a>. Pick your install method, I chose the package.</p>
+
+<p>Ok, now all pieces are there, the last step is to set them up.</p>
+
+<p>The <a href="http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/sndiod.1">sndiod man-page</a> has some good info but the midish one is pretty
+sparce for what we are trying to accomplish. Go to the <a href="http://www.midish.org/manual.html">official manual</a>,
+there the docs are a lot better.</p>
+
+<p>Here’s <a href="https://github.com/disrupts/dotfiles/blob/master/.midishrc">my midishrc</a> in case you want some inspiration:</p>
+
+<pre><code># Device 0: Roland      # keys: 0, drumpad: 9
+dnew 0 "rmidi/1"    ro
+inew roland_keys    {0 0}
+inew roland_drumpad {0 9}
+
+# Device 1: fluidsynth  # drums: 9, piano: others
+dnew 1 "midithru/0" wo
+onew fluid_piano    {1 0}
+onew fluid_drums    {1 9}
+
+# Connect Roland to fluidsynth
+fnew fluidsynth
+fmap {any roland_keys}    {any fluid_piano}
+fmap {any roland_drumpad} {any fluid_drums}
+</code></pre>
+
+<p>It should be pretty much self explanatory. I use midish to send the midi input
+from the keyboard to the synth. You could do that by piping the output of the
+interface straight to fluidsynth (with <code>aucat</code> just like the earlier
+test) but you lose lots of control and the ability to record what you’re
+playing.</p>
+
+<p>Everything is ready, start the soft-synth if you use one, start midish and
+enter an interactive mode (<code>i</code> for example). You should be able to
+play and hear some sounds!</p>
+
+<p>However I still had a big problem: lag. There was half a second between a key
+press and the audio. Not great.</p>
+
+<p>So I went back to the mailing lists (I checked some to setup midish properly).
+And there I found the <a href="http://ports.openbsd.narkive.com/IRU25u0b/midi-softsynth">missing answer</a>. Alexandre Ratchov, author of
+both <code>sndiod</code> and <code>midish</code> had already posted an answer
+with the config values he uses to play!</p>
+
+<p>And it worked. Here they are all together:</p>
+
+<pre><code>sndiod -r48000 -b240 -z120
+rmidish # (then start with i, or p or other to save, with a midishrc)
+fluidsynth -c 2 -z 128 -g 0.5 /usr/local/share/generaluser-gs/GeneralUser_GS.sf2
+</code></pre>
+
+<p>A few more comments:</p>
+
+<ul>
+<li><p>You may configure <code>rmidish</code> on the fly instead of writting a
+midishrc file, the interpreter works nicely!</p></li>
+<li><p><code>sndiod</code> daemon should already be runnning but with the default
+flags from <code>rc.conf</code>; restarting it without a reboot works without
+issues.</p></li>
+<li><p>Fluidsynth needs an <a href="https://en.wikipedia.org/wiki/SoundFont">soundfont</a>. Luckily there’s one in the ports
+tree to: <a href="http://openports.se/audio/generaluser-gs-soundfont">generaluser-gs-soundfont</a>. It is the one used in the
+previous example.</p></li>
+<li><p>You’ll also need to keep fluidsynth in the foreground otherwise it won’t play
+back sound. <code>tmux</code>, <code>dtach</code> or <code>abduco</code>
+should do the trick if you want to stop the connection.</p></li>
+<li><p>Ah and the <code>-g 0.5</code> flag to fluidsynth is just to increase the
+gain, it has nothing to do with MIDI.</p></li>
+</ul>
+
+
+<p>Just one more thing, there&rsquo;s a <a href="http://www.midish.org/mail.html">midish mailing list</a>. You might want
+to check out the <a href="http://www.midish.org/arch/">archive</a>.</p>
+
+<p><em>Image comes from</em> <a href="http://openbsd.org/30.html"><em>OpenBSD 3.0</em></a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[A Pokemon Easter Egg in Android 4.4 Calculator App]]></title>
@@ -178,38 +290,6 @@ Apple has yet to show something similar, and it will, but maybe not tomorrow. Ma
 <p>PS: The conference is over, now it is time let you know <a href="/blog/thoughts-on-wwdc-mmxiii/">what I think about it</a></p>
 
 <p><em>Image by ©2013 Apple Inc.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Random Access Memories and Nonsensical Metada]]></title>
-    <link href="http://disrupts.github.io/random-access-memories-and-nonsensical-metada/"/>
-    <updated>2013-05-25T12:30:00+02:00</updated>
-    <id>http://disrupts.github.io/random-access-memories-and-nonsensical-metada</id>
-    <content type="html"><![CDATA[<p>I’ve just lost<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> a full post.
-yeap, just finished writing it in gvim, hadn’t saved it nor copied it to wordpress online editor and saw miself forced to reboot my computer because.. I ran out of RAM.  I couldn’t switch programs, nor input anything. It was frozen. And it had plenty of space to use for swap (Mac OS X uses a swap file by default) but somehow it couldn’t handle it.</p>
-
-<p>So what was it about?</p>
-
-<p>Some weirdness I was confronted after ripping the new Daft Punk CD (I couldn’t resist, I bought it the same 21st of May it was launched).</p>
-
-<p>The problem came from some alac rips (it did not happened with flac).</p>
-
-<p>The files showed some strange creation dates when opened with <a href="https://mplayerhq.hu/design7/news.html">MPlayer</a>. Some ordered dates starting in the 20′s and ending in the 80′s.</p>
-
-<p><img class="center" src="/assets/images/2013-05-25-random-access-memories-and-nonsensical-metada/005.jpg" width="600" title="MPlayer screenshot including some strange metadata" ></p>
-
-<p>At first I though it was some easter egg but after ripping the files a second time I realised those new files showed some similar dates, but not the same. That’s why I blamed XLD (the program I used to transcode from aiff to alac) but that was another mistake. XLD did a great job in finding metadata in a few seconds and ripping the whole album in under 5 min. I ended up blaming MPlayer, because no other player showed that metadata. THey all showed only ’2013′ as the date (which was also showed in a different line by MPlayer, as shown in the screenshot). Even the OS showed a real creation date which is, as expected, the day the files were created by XLD.</p>
-
-<p>What do you think makes MPlayer show those dates consistently every time I play the songs?</p>
-<div class="footnotes">
-<hr/>
-<ol>
-<li id="fn:1">
-<p>sorry Apple, your Darwin kernel behaved properly. It was Firefox (from my beloved <a href="https://www.mozilla.org/">Mozilla</a>) which was responsible for the soft-crash. I have it setup to ask me if I want to accept cookies on every new website I visit and somehow one of them broke the app (oddly enough, I was, for once, running the release channel Firefox (stable) instead of <a href="http://nightly.mozilla.org/">Nightly</a> (daily build). That won’t change my mind about the browser and might soon sign up to collaborate with the developers (I came back to Firefox, after having switched to chrome almost at its debut, for <a href="https://www.mozilla.org/en-US/mission/">philosophical</a> reasons, 2 years ago).<a href="#fnref:1" rev="footnote">&#8617;</a></p></li>
-</ol>
-</div>
-
 ]]></content>
   </entry>
   
