@@ -83,7 +83,7 @@ And there I found the [missing answer][answer]. Alexandre Ratchov, author of
 both <code>sndiod</code> and <code>midish</code> had already posted an answer
 with the config values he uses to play!
 
-And it worked. Here they are all together:
+And it worked. Here they are, all together:
 
     sndiod -r48000 -b240 -z120
     rmidish # (then start with i, or p or other to save, with a midishrc)
@@ -101,7 +101,7 @@ A few more comments:
 * Fluidsynth needs an [soundfont][soundfont]. Luckily there’s one in the ports
   tree to: [generaluser-gs-soundfont][generaluser]. It is the one used in the
   previous example.
-  
+
 * You’ll also need to keep fluidsynth in the foreground otherwise it won’t play
   back sound. <code>tmux</code>, <code>dtach</code> or <code>abduco</code>
   should do the trick if you want to stop the connection.
@@ -111,6 +111,23 @@ A few more comments:
 
 Just one more thing, there's a [midish mailing list][mail_list]. You might want
 to check out the [archive][mail_archive].
+
+*UPDATE 16/02*
+
+I hadn't played piano in 4 years, but it wasn't as bad as I expected. My
+fingers felt numb and unresponsive yet my muscle memory was surprisingly good.
+After a few minutes practising *Across the Stars* the cords were coming back!
+
+I also managed to bring back from the dead my old (over 12 years old) Yamaha
+keyboard. Nothing was wrong with it but around 6 years ago I bought a MIDI/USB
+interface to use it as a controller but never managed to get it working (it was
+on Windows XP back in the day). Yesterday I remembered the interface was laying
+around and after a few minutes, it was connected and <code>dmesg</code> showed
+OpenBSD had found it! After a little more [tweaking][midishrc], I playing with
+both keyboards!
+
+The only thing left I have to say is:   *Merci Alexandre*
+
 
 *Image comes from* [*OpenBSD 3.0*][OBSD3.0]
 
