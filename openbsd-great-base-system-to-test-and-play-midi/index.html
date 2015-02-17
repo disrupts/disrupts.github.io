@@ -180,7 +180,8 @@ fluidsynth -c 2 -z 128 -g 0.5 /usr/local/share/generaluser-gs/GeneralUser_GS.sf2
 midishrc file, the interpreter works nicely!</p></li>
 <li><p><code>sndiod</code> daemon should already be runnning but with the default
 flags from <code>rc.conf</code>; restarting it without a reboot works without
-issues.</p></li>
+issues and if you have a dedicated machine you might want to edit
+<code>rc.conf.local</code></p></li>
 <li><p>Fluidsynth needs an <a href="https://en.wikipedia.org/wiki/SoundFont">soundfont</a>. Luckily there’s one in the ports
 tree to: <a href="http://openports.se/audio/generaluser-gs-soundfont">generaluser-gs-soundfont</a>. It is the one used in the
 previous example.</p></li>
