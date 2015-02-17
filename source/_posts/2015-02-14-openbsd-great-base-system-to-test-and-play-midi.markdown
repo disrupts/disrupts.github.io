@@ -116,7 +116,8 @@ to check out the [archive][mail_archive].
 
 I hadn't played piano in 4 years, but it wasn't as bad as I expected. My
 fingers felt numb and unresponsive yet my muscle memory was surprisingly good.
-After a few minutes practising *Across the Stars* the cords were coming back!
+After a few minutes practising [*Across the Stars*][acrossstars] the cords were
+coming back!
 
 I also managed to bring back from the dead my old (over 12 years old) Yamaha
 keyboard. Nothing was wrong with it but around 6 years ago I bought a MIDI/USB
@@ -144,3 +145,4 @@ The only thing left I have to say is:   *Merci Alexandre*
 [mail_list]:    http://www.midish.org/mail.html
 [mail_archive]: http://www.midish.org/arch/
 [OBSD3.0]:      http://openbsd.org/30.html
+[acrossstars]:  https://www.youtube.com/watch?v=vIbmfDvQA5U
