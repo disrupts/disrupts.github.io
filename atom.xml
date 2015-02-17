@@ -4,7 +4,7 @@
   <title><![CDATA[Disruptively sincere]]></title>
   <link href="http://disrupts.github.io/atom.xml" rel="self"/>
   <link href="http://disrupts.github.io/"/>
-  <updated>2015-02-14T13:16:48+01:00</updated>
+  <updated>2015-02-17T19:43:14+01:00</updated>
   <id>http://disrupts.github.io/</id>
   <author>
     <name><![CDATA[disrupts]]></name>
@@ -92,7 +92,7 @@ And there I found the <a href="http://ports.openbsd.narkive.com/IRU25u0b/midi-so
 both <code>sndiod</code> and <code>midish</code> had already posted an answer
 with the config values he uses to play!</p>
 
-<p>And it worked. Here they are all together:</p>
+<p>And it worked. Here they are, all together:</p>
 
 <pre><code>sndiod -r48000 -b240 -z120
 rmidish # (then start with i, or p or other to save, with a midishrc)
@@ -120,6 +120,23 @@ gain, it has nothing to do with MIDI.</p></li>
 
 <p>Just one more thing, there&rsquo;s a <a href="http://www.midish.org/mail.html">midish mailing list</a>. You might want
 to check out the <a href="http://www.midish.org/arch/">archive</a>.</p>
+
+<p><em>UPDATE 16/02</em></p>
+
+<p>I hadn&rsquo;t played piano in 4 years, but it wasn&rsquo;t as bad as I expected. My
+fingers felt numb and unresponsive yet my muscle memory was surprisingly good.
+After a few minutes practising <a href="https://www.youtube.com/watch?v=vIbmfDvQA5U"><em>Across the Stars</em></a> the cords were
+coming back!</p>
+
+<p>I also managed to bring back from the dead my old (over 12 years old) Yamaha
+keyboard. Nothing was wrong with it but around 6 years ago I bought a MIDI/USB
+interface to use it as a controller but never managed to get it working (it was
+on Windows XP back in the day). Yesterday I remembered the interface was laying
+around and after a few minutes, it was connected and <code>dmesg</code> showed
+OpenBSD had found it! After a little more <a href="https://github.com/disrupts/dotfiles/blob/master/.midishrc">tweaking</a>, I playing with
+both keyboards!</p>
+
+<p>The only thing left I have to say is:   <em>Merci Alexandre</em></p>
 
 <p><em>Image comes from</em> <a href="http://openbsd.org/30.html"><em>OpenBSD 3.0</em></a></p>
 ]]></content>
