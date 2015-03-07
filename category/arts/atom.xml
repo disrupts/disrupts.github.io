@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Arts | Disruptively sincere]]></title>
   <link href="http://disrupts.github.io/category/arts/atom.xml" rel="self"/>
   <link href="http://disrupts.github.io/"/>
-  <updated>2015-02-20T08:52:05+01:00</updated>
+  <updated>2015-03-07T21:34:55+01:00</updated>
   <id>http://disrupts.github.io/</id>
   <author>
     <name><![CDATA[disrupts]]></name>
@@ -134,10 +134,10 @@ keyboard. Nothing was wrong with it but around 6 years ago I bought a MIDI/USB
 interface to use it as a controller but never managed to get it working (it was
 on Windows XP back in the day). Yesterday I remembered the interface was laying
 around and after a few minutes, it was connected and <code>dmesg</code> showed
-OpenBSD had found it! After a little more <a href="https://github.com/disrupts/dotfiles/blob/master/.midishrc">tweaking</a>, I playing with
-both keyboards!</p>
+OpenBSD had found it! After a little more <a href="https://github.com/disrupts/dotfiles/blob/master/.midishrc">tweaking</a>, I was playing
+with both keyboards!</p>
 
-<p>The only thing left I have to say is:   <em>Merci Alexandre</em></p>
+<p><em>Merci Alexandre</em>, your code is awesome!</p>
 
 <p><em>Image comes from</em> <a href="http://openbsd.org/30.html"><em>OpenBSD 3.0</em></a></p>
 ]]></content>
