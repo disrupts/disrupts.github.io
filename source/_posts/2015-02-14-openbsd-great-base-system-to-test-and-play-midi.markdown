@@ -96,7 +96,8 @@ A few more comments:
 
 * <code>sndiod</code> daemon should already be runnning but with the default
   flags from <code>rc.conf</code>; restarting it without a reboot works without
-  issues.
+  issues and if you have a dedicated machine you might want to edit
+  <code>rc.conf.local</code>
 
 * Fluidsynth needs an [soundfont][soundfont]. Luckily there’s one in the ports
   tree to: [generaluser-gs-soundfont][generaluser]. It is the one used in the
@@ -124,10 +125,10 @@ keyboard. Nothing was wrong with it but around 6 years ago I bought a MIDI/USB
 interface to use it as a controller but never managed to get it working (it was
 on Windows XP back in the day). Yesterday I remembered the interface was laying
 around and after a few minutes, it was connected and <code>dmesg</code> showed
-OpenBSD had found it! After a little more [tweaking][midishrc], I playing with
-both keyboards!
+OpenBSD had found it! After a little more [tweaking][midishrc], I was playing
+with both keyboards!
 
-The only thing left I have to say is:   *Merci Alexandre*
+*Merci Alexandre*, your code is awesome!
 
 
 *Image comes from* [*OpenBSD 3.0*][OBSD3.0]
